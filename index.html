@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papvNNH18FfU1qI4d3Gfzy3ZVZl9p9h+0r44m/tI0V6fQ0bE+mCDyyDkPoxGFG0XBbXHPGqHOK3v9hpr/J1E3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yujin Oh's Laboratory</title>
@@ -51,6 +54,48 @@
       margin-bottom: 0.6rem;
     }
     a { color: #003366; }
+
+    /* ---------- Add figure-row styles here ---------- */
+    .cv-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    
+    .cv-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.5em;
+    }
+    
+    .cv-list .institution,
+    .cv-list .title {
+      flex: 2;
+    }
+    
+    .cv-list .role,
+    .cv-list .venue {
+      flex: 1;
+      text-align: right;
+      color: #555;
+    }
+
+    /* ---------- Add figure-row styles here ---------- */
+    .figure-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+  
+    .figure-row img {
+      height: 150px; /* fixed height */
+      width: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
