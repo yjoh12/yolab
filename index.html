@@ -76,15 +76,19 @@
       align-items: baseline;
       margin-bottom: 0.5em;
     }
-    .cv-list .institution,
-    .cv-list .title {
-      flex: 2;
+    .cv-list .institution {
+      flex: 2;           /* left column */
+      text-align: left;
     }
-    .cv-list .role,
-    .cv-list .venue {
-      flex: 1;
+    .cv-list .role {
+      flex: 3;           /* middle column */
+      text-align: left;
+    }
+    .cv-list .duration {
+      flex: 1;           /* right column */
       text-align: right;
       color: #555;
+      white-space: nowrap; /* prevent line break */
     }
     /* ---------- Add figure-row styles here ---------- */
     .figure-row {
@@ -108,9 +112,9 @@
 
   <!-- Three figures/images in a row -->
   <div class="figure-row">
-    <img src="https://drive.google.com/uc?export=view&id=1pzvFJ21VvMOG2BN8nP8oDDWvZGsvqw6B" alt="ICML">
-    <img src="https://drive.google.com/uc?export=view&id=1-Ay2nPc926ODT9cA3TJyQRd2vHciBFzp" alt="Oncosoft">
-    <img src="https://drive.google.com/uc?export=view&id=1kTcL93PiKwh8XZLBW78AeBJd3kDA3LpY" alt="ICLR">
+    <img src="images/icml.png" alt="ICML">
+    <img src="images/oncosoft.png" alt="Oncosoft">
+    <img src="images/iclr.png" alt="ICLR">
   </div>  
 
   <!-- Contact with icons -->
@@ -151,20 +155,24 @@
   <h2>Education & Career</h2>
   <ul class="cv-list">
     <li>
-      <span class="institution"><b>Harvard Medical School & Massachusetts General Hospital</b></span>
-      <span class="role">Postdoctoral Researcher in Dept. of Radiology (03/2024 – 02/2026)</span>
+      <span class="institution"><b>Harvard Medical School & MGH</b></span>
+      <span class="role">Postdoctoral Researcher in Dept. of Radiology</span>
+      <span class="duration">2024 – 2026</span>
     </li>
     <li>
-      <span class="institution"><b>Korea Advanced Institute of Science & Technology (KAIST), Daejeon</b></span>
-      <span class="role">Ph.D. in School of AI (Supervisor: Jong Chul Ye) (09/2019 – 02/2024)</span>
+      <span class="institution"><b>KAIST, Daejeon</b></span>
+      <span class="role">Ph.D. in School of AI (Supervisor: Jong Chul Ye)</span>
+      <span class="duration">2019 – 2024</span>
     </li>
     <li>
-      <span class="institution"><b>LG Electronics, CTO Devision, Seoul</b></span>
-      <span class="role">Senior SW Engineer (12/2014 – 05/2019)</span>
+      <span class="institution"><b>LG Electronics, Seoul</b></span>
+      <span class="role">Senior SW Engineer</span>
+      <span class="duration">2014 – 2019</span>
     </li>
     <li>
       <span class="institution"><b>Korea University, Seoul</b></span>
-      <span class="role">M.S. & B.S. in Dept. of Biomedical Engineering (Supervisor: Beop-Min Kim) (03/2008 – 08/2014)</span>
+      <span class="role">M.S. & B.S. in Biomedical Engineering (Supervisor: Beop-Min Kim)</span>
+      <span class="duration">2008 – 2014</span>
     </li>
   </ul>
   </section>
@@ -185,74 +193,81 @@
   <h2>Selected Publications</h2>
   <ul class="cv-list">
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://openreview.net/forum?id=BUONdewsBa&noteId=x8degMxUBK" target="_blank">
             Distribution-aware Fairness Learning in Medical Image Segmentation
           </a>
         </b>
       </span>
-      <span class="venue">ICML Top 2.6% Spotlight, 2025</span>
+      <span class="role">The International Conference on Machine Learning (ICML), Top 2.6% Spotlight</span>
+      <span class="duration">2025</span>
     </li>
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://www.sciencedirect.com/science/article/pii/S1361841525001938" target="_blank">
             End-to-end Breast Cancer Radiotherapy Planning via LMMs with Consistency Embedding
           </a>
         </b>
       </span>
-      <span class="venue">Medical Image Analysis, vol. 105, p. 103 646, 2025</span>
+      <span class="role">Medical Image Analysis, vol. 105, p. 103 646</span>
+      <span class="duration">2025</span>
     </li>
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://www.nature.com/articles/s41467-024-53387-y" target="_blank">
             LLM-driven Multimodal Target Volume Contouring
           </a>
         </b>
       </span>
-      <span class="venue">Nature Communications, vol. 15, 9186, 2024</span>
+      <span class="role">Nature Communications, vol. 15, 9186</span>
+      <span class="duration">2024</span>
     </li>
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://cubeyoung.github.io/OTSeg_project/" target="_blank">
             OTSeg: Multi-prompt Sinkhorn Attention for Zero-shot Semantic Segmentation
           </a>
         </b>
       </span>
-      <span class="venue">ECCV, 2024</span>
+      <span class="role">The European Conference on Computer Vision (ECCV)</span>
+      <span class="duration">2024</span>
     </li>
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://openreview.net/forum?id=H0gdPxSwkPb" target="_blank">
             Diffusion Adversarial Representation Learning for Self-supervised Vessel Segmentation
           </a>
         </b>
       </span>
-      <span class="venue">ICLR, 2023</span>
+      <span class="role">The International Conference on Learning Representations(ICLR)</span>
+      <span class="duration">2023</span>
     </li>
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://arxiv.org/abs/2104.05892" target="_blank">
             CXR Segmentation by AdaIN-based Domain Adaptation and Knowledge Distillation
           </a>
         </b>
       </span>
-      <span class="venue">ECCV, 2022</span>
+      <span class="role">The European Conference on Computer Vision (ECCV)</span>
+      <span class="duration">2020</span>
     </li>
     <li>
-      <span class="title">
+      <span class="institution">
         <b>
           <a href="https://ieeexplore.ieee.org/document/9090149" target="_blank">
             Deep Learning Covid-19 Features on CXR using Limited Training Data Sets
           </a>
         </b>
       </span>
-      <span class="venue">IEEE TMI, vol. 39, no. 8, pp. 2688–2700, 2020</span>
+      <span class="role">IEEE TMI, vol. 39, no. 8, pp. 2688–2700</span>
+      <span class="duration">2020</span>
     </li>
   </ul>
 </section>
