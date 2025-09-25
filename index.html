@@ -90,6 +90,20 @@
       color: #555;
       white-space: nowrap; /* prevent line break */
     }
+    .pub-title {
+      font-size: 1em;
+      margin-bottom: 4px;
+    }
+    .pub-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .pub-meta .duration {
+      white-space: nowrap;
+      margin-left: 12px;
+    }
     /* ---------- Add figure-row styles here ---------- */
     .figure-row {
       display: flex;
@@ -156,24 +170,40 @@
   <h2>Education & Career</h2>
   <ul class="cv-list">
     <li>
-      <span class="institution"><b>Harvard Medical School & MGH</b></span>
-      <span class="role">Postdoctoral Researcher in Dept. of Radiology</span>
-      <span class="duration">2024 – 2026</span>
+      <div class="pub-title">
+        <b>Harvard Medical School & Massachusetts General Hospital (MGH), Boston, USA</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">Postdoctoral Researcher in Dept. of Radiology (Superviser: Quanzheng Li)</span>
+        <span class="duration">2024 – 2026</span>
+      </div>
     </li>
     <li>
-      <span class="institution"><b>KAIST, Daejeon</b></span>
-      <span class="role">Ph.D. in School of AI (Supervisor: Jong Chul Ye)</span>
-      <span class="duration">2019 – 2024</span>
+      <div class="pub-title">
+        <b>Korea Advanced Institute of Science & Technology (KAIST), Daejeon, South Korea</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">Ph.D. in School of AI (Supervisor: Jong Chul Ye)</span>
+        <span class="duration">2019 – 2024</span>
+      </div>
     </li>
     <li>
-      <span class="institution"><b>LG Electronics, Seoul</b></span>
-      <span class="role">Senior SW Engineer</span>
-      <span class="duration">2014 – 2019</span>
+      <div class="pub-title">
+        <b>LG Electronics., Seoul, South Korea</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">Senior SW Engineer in CTO Division</span>
+        <span class="duration">2014 – 2019</span>
+      </div>
     </li>
     <li>
-      <span class="institution"><b>Korea University, Seoul</b></span>
-      <span class="role">M.S. & B.S. in Biomedical Engineering (Supervisor: Beop-Min Kim)</span>
-      <span class="duration">2008 – 2014</span>
+      <div class="pub-title">
+        <b>Korea University, Seoul, South Korea</b>
+      </div>
+      <div class="pub-meta">
+        <span class="role">M.S. & B.S. in Dept. of Biomedical Engineering (Supervisor: Beop-Min Kim)/span>
+        <span class="duration">2008 – 2014</span>
+      </div>
     </li>
   </ul>
   </section>
@@ -189,89 +219,95 @@
       <li>Sejong Science Fellowship, NRF Korea, 09/2024 – 08/2025 </li>
     </ul>
   </section>
-
+  
   <section id="publications">
-  <h2>Selected Publications</h2>
-  <ul class="cv-list">
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://openreview.net/forum?id=BUONdewsBa&noteId=x8degMxUBK" target="_blank">
+    <h2>Publications</h2>
+    <ul class="pub-list">
+      <li>
+        <div class="pub-title">
+          <b><a href="https://openreview.net/forum?id=BUONdewsBa&noteId=x8degMxUBK" target="_blank">
             Distribution-aware Fairness Learning in Medical Image Segmentation
-          </a>
-        </b>
-      </span>
-      <span class="role">The International Conference on Machine Learning (ICML), Top 2.6% Spotlight</span>
-      <span class="duration">2025</span>
-    </li>
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://www.sciencedirect.com/science/article/pii/S1361841525001938" target="_blank">
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ICML, Top 2.6% Spotlight</span>
+          <span class="duration">2025</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://www.sciencedirect.com/science/article/pii/S1361841525001938" target="_blank">
             End-to-end Breast Cancer Radiotherapy Planning via LMMs with Consistency Embedding
-          </a>
-        </b>
-      </span>
-      <span class="role">Medical Image Analysis, vol. 105, p. 103 646</span>
-      <span class="duration">2025</span>
-    </li>
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://www.nature.com/articles/s41467-024-53387-y" target="_blank">
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Medical Image Analysis, vol. 105, p. 103646</span>
+          <span class="duration">2025</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://www.nature.com/articles/s41467-024-53387-y" target="_blank">
             LLM-driven Multimodal Target Volume Contouring
-          </a>
-        </b>
-      </span>
-      <span class="role">Nature Communications, vol. 15, 9186</span>
-      <span class="duration">2024</span>
-    </li>
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://cubeyoung.github.io/OTSeg_project/" target="_blank">
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">Nature Communications, vol. 15, 9186</span>
+          <span class="duration">2024</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://cubeyoung.github.io/OTSeg_project/" target="_blank">
             OTSeg: Multi-prompt Sinkhorn Attention for Zero-shot Semantic Segmentation
-          </a>
-        </b>
-      </span>
-      <span class="role">The European Conference on Computer Vision (ECCV)</span>
-      <span class="duration">2024</span>
-    </li>
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://openreview.net/forum?id=H0gdPxSwkPb" target="_blank">
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ECCV</span>
+          <span class="duration">2024</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://openreview.net/forum?id=H0gdPxSwkPb" target="_blank">
             Diffusion Adversarial Representation Learning for Self-supervised Vessel Segmentation
-          </a>
-        </b>
-      </span>
-      <span class="role">The International Conference on Learning Representations(ICLR)</span>
-      <span class="duration">2023</span>
-    </li>
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://arxiv.org/abs/2104.05892" target="_blank">
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ICLR</span>
+          <span class="duration">2023</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://arxiv.org/abs/2104.05892" target="_blank">
             CXR Segmentation by AdaIN-based Domain Adaptation and Knowledge Distillation
-          </a>
-        </b>
-      </span>
-      <span class="role">The European Conference on Computer Vision (ECCV)</span>
-      <span class="duration">2020</span>
-    </li>
-    <li>
-      <span class="institution">
-        <b>
-          <a href="https://ieeexplore.ieee.org/document/9090149" target="_blank">
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">ECCV</span>
+          <span class="duration">2020</span>
+        </div>
+      </li>
+  
+      <li>
+        <div class="pub-title">
+          <b><a href="https://ieeexplore.ieee.org/document/9090149" target="_blank">
             Deep Learning Covid-19 Features on CXR using Limited Training Data Sets
-          </a>
-        </b>
-      </span>
-      <span class="role">IEEE TMI, vol. 39, no. 8, pp. 2688–2700</span>
-      <span class="duration">2020</span>
-    </li>
-  </ul>
-</section>
+          </a></b>
+        </div>
+        <div class="pub-meta">
+          <span class="role">IEEE TMI, vol. 39, no. 8, pp. 2688–2700</span>
+          <span class="duration">2020</span>
+        </div>
+      </li>
+    </ul>
+  </section>
   
 </body>
 </html>
