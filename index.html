@@ -49,6 +49,9 @@
       padding-bottom: 0.3rem;
       color: #003366;
     }
+    #news > h2 {
+      color: lightgreen;
+    }
     ul {
       list-style: none;
       padding-left: 0;
@@ -63,6 +66,9 @@
     }
     .sky-blue-link:hover {
       text-decoration: underline;
+    }
+    .light-green-link {
+      color: lightgreen;
     }
     /* ---------- Add figure-row styles here ---------- */
     .cv-list {
@@ -124,14 +130,11 @@
 <body>
   <header>
   <h1>Yujin Oh – Research Website</h1>
-
+    
   <!-- Contact with icons -->
   <p class="contacts">
-    <a href="mailto:yjoh12@gmail.com" class="sky-blue-link">
-      <i class="fas fa-envelope"></i> yjoh12@gmail.com
-    </a> | 
-    <a href="mailto:yuoh@mgh.harvard.edu" class="sky-blue-link">
-      <i class="fas fa-envelope"></i> yuoh@mgh.harvard.edu
+    <a href="mailto:yjoh12@gmail.com, yuoh@mgh.harvard.edu" class="sky-blue-link">
+      <i class="fas fa-envelope"></i> yjoh12@gmail.com, yuoh@mgh.harvard.edu
     </a> | 
     <a href="https://scholar.google.com/citations?user=4nnw088AAAAJ&hl=en" target="_blank" class="sky-blue-link">
       <i class="fas fa-graduation-cap"></i> Google Scholar
@@ -159,8 +162,11 @@
     <a href="#funds">
       <i class="fas fa-dollar-sign"></i> Funds
     </a>
+    <a href="#news" class="light-green-link">
+      <i class="fas fa-book"></i> News
+    </a>
     <a href="#publications">
-      <i class="fas fa-book"></i> Publications
+      <i class="fas fa-book"></i> Selected 10 Publications
     </a>
   </nav>
   
@@ -235,6 +241,14 @@
         </div>
       </li>
     </ul>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="pub-list">
+      <div class="pub-title">
+        Looking for M.S. and Ph.D. students interested in research collaboration, with my appointment as an Assistant Professor at a leading Korean university starting in March 2026.
+      </div>
   </section>
   
   <section id="publications">
@@ -344,7 +358,7 @@
         </div>
         <div class="pub-meta">
           <span class="role">ECCV</span>
-          <span class="duration">2020</span>
+          <span class="duration">2022</span>
         </div>
       </li>
   
@@ -360,6 +374,20 @@
         </div>
       </li>
     </ul>
+  </section>
+
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <ul class="pub-list">
+      <div class="pub-title">
+        <b>Generalizable AI for Medical Image Analysis</b>
+      </div>
+      <div class="pub-title">
+        <b>Intelligent Clinical Decision Support</b>
+      </div>
+      <div class="pub-title">
+        <b>Multimodal AI for Oncology Treatment</b>
+      </div>
   </section>
   
 </body>
