@@ -117,14 +117,17 @@
       gap: 30px;
       margin-top: 20px;
       margin-bottom: 30px;
+      flex-wrap: wrap; /* wrap to next line if screen is small */
     }
     .figure-row img {
-      height: 200px; /* fixed height */
       width: auto;
+      max-height: 200px;
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.2);
       object-fit: contain;
-    }
+      pointer-events: none; /* keep non-interactive */
+      ser-select: none;
+    }  
   </style>
 </head>
 <body>
